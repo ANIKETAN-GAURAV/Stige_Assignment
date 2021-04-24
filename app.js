@@ -23,7 +23,7 @@ var indexRoutes         =       require("./routes/index");
 var middleware          =       require("./middleware/index");
 const port              =       3000;
 
-mongoose.connect("mongodb://localhost:27017/yelp_camp");
+mongoose.connect(" mongodb+srv://Aniketan:Baburao1@workspace-wmiky.mongodb.net/test");
 
 // will remove all the campgrounds whenever we start the server
 // seedDB();
@@ -107,6 +107,6 @@ Campground.findById("question",function(err,foundCampground)
     
 })
 // while using ()=> for function in ea6 don't put semicolon at the end of this function
-app.listen(4300,function(){
+app.listen(process.env.PORT || 3000,function(){
     console.log("server is started!!");
 })

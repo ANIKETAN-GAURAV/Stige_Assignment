@@ -51,6 +51,19 @@ router.post("/campgrounds", middleware.isLoggedIn, function(req,res)
         others:10, 
         _id: "question"
     }
+
+//   Campground.create(newCampground, function(err,newly)
+//     {  
+//         console.log(newly);
+//         if(err)
+//         console.log("Error");
+//         else
+//         {
+//             res.send("helloworld");
+//             res.end();
+//         }
+//     });
+// return ;
     Campground.findById("question",function(err,foundCampground)
     {   
         if(err){
