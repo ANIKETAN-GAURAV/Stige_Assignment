@@ -14,7 +14,7 @@ var passport            =       require("passport");
 var LocalStrategy       =       require("passport-local");
 var pssprtMong          =       require("passport-local-mongoose");
 var session             =       require("express-session");
-var User                =       require("./models/User");
+var User                =       require("./models/User.js");
 var methodOverride      =       require("method-override");
 
 var commentRoutes       =       require("./routes/comments");
