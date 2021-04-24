@@ -14,11 +14,11 @@ var passport            =       require("passport");
 var LocalStrategy       =       require("passport-local");
 var pssprtMong          =       require("passport-local-mongoose");
 var session             =       require("express-session");
-var User                =       require("./models/user");
-var methodOverride      =       require("method-override");
 
+var methodOverride      =       require("method-override");
 var commentRoutes       =       require("./routes/comments");
 var campgroundRoutes    =       require("./routes/campgrounds");
+var User                =       require("./models/user");
 var indexRoutes         =       require("./routes/index");
 var middleware          =       require("./middleware/index");
 const port              =       3000;
