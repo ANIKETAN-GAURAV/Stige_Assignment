@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #header1{
+    z-index: 1;
+    position: relative;
+    text-align: top;
+    padding-top: 10px;
+    text-align: center;
+  }
+  form {
+    text-align: center;
+  }
+ 

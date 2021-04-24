@@ -1,0 +1,11 @@
+.space{
+    position: relative;
+    padding-left: 20px;
+}
+h1,p{
+    font-family: cursive;
+}
+button{
+    color: whitesmoke;
+    background-color:red;
+}

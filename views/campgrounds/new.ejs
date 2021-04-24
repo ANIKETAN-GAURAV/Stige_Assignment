@@ -1,0 +1,77 @@
+<%- include('../partials/header'); -%>
+
+<link rel="stylesheet" href="/stylesheets/Test.css">
+<div class="container">
+
+    <h1 style="text-align: center;">Stige Assessment test</h1>
+
+    <div style="width: 30%; margin: 25px auto;" >
+        
+        <form action="/campgrounds" method="POST">
+            <p>1. Please select your gender:</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="others" name="gender" value="others">
+            <label for="other">Others</label>
+          
+            <br>  
+          
+            <p>2. Please select your age:</p>
+            <input type="radio" id="age1" name="age" value="30">
+            <label for="age1">0 - 30</label><br>
+            <input type="radio" id="age2" name="age" value="60">
+            <label for="age2">31 - 60</label><br>  
+            <input type="radio" id="age3" name="age" value="100">
+            <label for="age3">61 - 100</label>
+            <br>
+            <p>3. Which language do u use:</p>
+            <input type="radio" id="lang1" name="lang1" value="30">
+            <label for="age1">C++</label><br>
+            <input type="radio" id="lang2" name="lang2" value="60">
+            <label for="age2">Java</label><br>  
+            <input type="radio" id="lang3" name="lang3" value="100">
+            <label for="age3">python</label><br><br>
+            <input type="submit" value="Submit">
+          </form>
+          
+        <!-- <form method="post" action="/campgrounds" >
+            <p> 1. Which language do you use ?</p>
+        
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name = "option1" >
+                <label class="form-check-label" for="flexCheckDefault">
+                <span class="space">C++</span>
+                </label>
+    
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"  >
+                <label class="form-check-label" for="flexCheckDefault">
+                <span class="space">Java</span>
+                </label>
+              </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                <span class="space">Python</span>
+                </label>
+              </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                <span class="space">Others</span>
+                </label>
+              </div>
+          
+
+              <button>Submit</button>
+        </form>
+         -->
+        <a href="/campgrounds">Go back</a>
+        
+    </div>
+   
+</div>
+
+
+<%- include('../partials/footer'); -%>

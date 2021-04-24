@@ -1,0 +1,75 @@
+body{
+    background-color: black;
+}
+#landing-header {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 40vh;
+  }
+ #landing-header h1{
+  color:white;
+ }
+ .slideshow { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .slideshow li { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 10s linear infinite; 
+  }
+  .MyInfo {
+     font-weight: bold;
+     font-family:Arial, Helvetica, sans-serif;
+     color: green;
+     font-size: 20px;
+
+  }
+  .slideshow li:nth-child(1) { 
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMKz9RbNm0Z_L8e-Qby39lThrjumEyz_ss1A&usqp=CAU);
+    animation-delay: 0s;
+  }
+  .slideshow li:nth-child(2) { 
+    background-image: url(https://toppng.com/uploads/preview/textured-backgrounds-for-websites-11553984889fujpibqyf9.jpg);
+    animation-delay: 1s; 
+  }
+  .slideshow li:nth-child(3) { 
+    background-image: url( https://i.pinimg.com/originals/5c/f2/66/5cf2660af5f4214def7166dc7a7c8062.jpg);
+    animation-delay: 3s; 
+  }
+  @keyframes imageAnimation { 
+    0% { 
+      opacity: 0; 
+      animation-timing-function: ease-in;
+    }
+    10% {
+      opacity: 1;
+      animation-timing-function: ease-out;
+    }
+    20% {
+      opacity: 1
+    }
+    30% {
+      opacity: 0
+    }
+  }
+  /* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}

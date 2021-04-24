@@ -1,0 +1,29 @@
+#Stige
+{
+    font-weight: bold;
+    font-family: cursive;
+    Color: black;
+    font-size:20px;
+}
+.detail
+{
+    font-size:2px;
+    font-family:monospace;
+    color: darkcyan;
+}
+.thumbnail img
+{
+ width:100%;
+}
+.thumbnail{
+    padding: 0px;
+}
+.thumbnail .caption-full p{
+    padding: 9px;
+}
+#inline{
+    display: inline;
+}
+.inline{
+    display: inline;
+}
