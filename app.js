@@ -20,6 +20,7 @@ var commentRoutes       =       require("./routes/comments");
 var campgroundRoutes    =       require("./routes/campgrounds");
 var User                =       require("./models/user");
 var indexRoutes         =       require("./routes/index");
+
 var middleware          =       require("./middleware/index");
 const port              =       3000;
 
